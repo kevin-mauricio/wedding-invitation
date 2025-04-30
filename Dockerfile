@@ -16,7 +16,9 @@ WORKDIR /app
 COPY . .
 
 # Instalar las dependencias de Laravel
-RUN composer install --no-dev --optimize-autoloader
+# RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader || { cat /app/storage/logs/laravel.log || true; exit 1; }
+
 
 # Exponer el puerto en el que se ejecutará el servidor
 EXPOSE 80
