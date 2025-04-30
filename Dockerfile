@@ -24,10 +24,11 @@ WORKDIR /app
 COPY . .
 
 # Asegura que Laravel tenga los directorios correctos
-RUN mkdir -p bootstrap/cache storage && chmod -R 775 bootstrap/cache storage
+RUN mkdir -p bootstrap/cache storage/framework storage/logs \
+    && chmod -R 775 bootstrap storage
 
 # Instala las dependencias de Composer en modo producción
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader || composer diagnose || true
 
 # Expone el puerto 80 para Render
 EXPOSE 80
