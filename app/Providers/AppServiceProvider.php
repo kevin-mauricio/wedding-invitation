@@ -19,6 +19,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        if (!is_dir(base_path('bootstrap/cache'))) {
+            mkdir(base_path('bootstrap/cache'), 0775, true);
+        }
     }
 }
