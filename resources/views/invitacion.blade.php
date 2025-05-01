@@ -1,11 +1,21 @@
-<span>Maravillosa boda de Karen & Ben</span>
-<form method="POST" action="/confirmar">
-    @csrf
-    <input type="text" name="nombre" placeholder="Tu nombre" required>
-    <select name="asistencia">
-      <option value="Asistiré">Asistiré</option>
-      <option value="No podré asistir">No podré asistir</option>
-    </select>
-    <button type="submit">Confirmar</button>
-  </form>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="row h-100">
+      <div class="col d-flex justify-content-center my-auto">
+        <span class="fw-bold fs-1">Boda Karen y Ben</span>
+
+      </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
   
