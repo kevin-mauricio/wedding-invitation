@@ -44,5 +44,5 @@ RUN php artisan key:generate
 EXPOSE 80
 
 # Comando para iniciar Laravel con el servidor embebido de PHP
-CMD php artisan migrate --force && php -S 0.0.0.0:80 -t public
+CMD php artisan migrate --force && php -S 0.0.0.0:80 -t public public/index.php
 
