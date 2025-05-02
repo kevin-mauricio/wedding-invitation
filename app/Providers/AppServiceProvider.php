@@ -22,5 +22,9 @@ class AppServiceProvider extends ServiceProvider
         if (!is_dir(base_path('bootstrap/cache'))) {
             mkdir(base_path('bootstrap/cache'), 0775, true);
         }
+
+        if (env('APP_ENV') === 'production') {
+            URL::forceScheme('https');
+        }
     }
 }
