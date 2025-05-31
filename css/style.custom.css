@@ -33,3 +33,9 @@
 .w-100 {
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .margin-title {
+    margin-top: 10rem !important;
+  }
+}
