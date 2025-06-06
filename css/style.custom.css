@@ -34,6 +34,10 @@
     width: 100%;
 }
 
+.fuente-programacion h3{
+    font-family: 'Palatino Linotype';
+}
+
 @media screen and (max-width: 768px) {
   .margin-title {
     margin-top: 10rem !important;
