@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
   border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  background: #6d786646;
   padding: 30px;
   width: 100%;
   float: left;
@@ -941,8 +941,8 @@ form label {
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 8.2rem;
+  height: 8.2rem;
   background: #6d7866;
   margin: 0 4px;
   -webkit-border-radius: 50%;
@@ -967,7 +967,7 @@ form label {
 .simply-countdown > .simply-section > div {
   /* countdown block inner div */
   display: table-cell;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   height: 100px;
   width: 100px;
 }

@@ -4,11 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>K&B</title>
+	<title>Ben & Karen</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
+	<link rel="icon" type="image/png" href="images/bg-1.jpg">
 	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap"
@@ -60,9 +61,10 @@
 </head>
 
 <body>
-	<audio autoplay>
-		<source src="Bruno Mars - Marry You (Official Lyric Video).mp3" type="audio/mpeg">
+	<audio id="musica">
+		<source src="Carlos Vives - Cumbiana (LetraLyrics).mp3" type="audio/mpeg">
 	</audio>
+
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
@@ -74,7 +76,6 @@
 								Karen<strong>.</strong></a></div>
 					</div>
 				</div>
-
 			</div>
 		</nav>
 
@@ -86,25 +87,43 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
-								<h1 class="margin-title" style="font-family: 'Great Vibes'; font-size: 6rem;">¡Nos
+								<div class="margin-title">
+									<button id="playMusicBtn" class="btn-play" aria-label="Reproducir música">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white"
+											viewBox="0 0 24 24" style="flex-shrink: 0;">
+											<path d="M8 5v14l11-7z" />
+										</svg>
+										Reproducir
+									</button>
+
+									<div id="waveform" class="waveform" style="display:none;"
+										aria-label="Reproduciendo música">
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+										<span class="bar"></span>
+									</div>
+								</div>
+								<h1 style="font-family: 'Great Vibes'; font-size: 6rem; margin-top: 6rem;">¡Nos
 									casamos!</h1>
 								<h2 style="font-family: 'Playfair Display'; font-size: 1.6rem;">Nos alegra compartir
 									este día tan especial contigo. <br> Acompañanos a celebrar
 									nuestro amor.</h2>
-								<div class="row justify-content-center margin-bottom gap" style="color: white;">
-									<div class="col-md-2 align-items-center">
+								<div class="row justify-content-center margin-bottom" style="color: white;">
+									<div class="col-xs-3 align-items-center">
 										<span class="border-y" style="width: 100%;">VIERNES</span>
 									</div>
-									<div class="col-md-2 border-x">
+									<div class="col-xs-3 col-md-2 border-x">
 										<span class="display-block">DIC</span>
 										<span class="display-block" style="font-size: 4rem;">12</span>
 										<span class="display-block">2025</span>
 									</div>
-									<div class="col-md-2 align-items-center">
+									<div class="col-xs-3 align-items-center">
 										<span class="border-y" style="width: 100%;">4 PM</span>
 									</div>
 								</div>
-								<span style="color: white; font-size: 2rem;">Faltan</span>
+								<span style="color: white; font-size: 2rem; font-family: 'Playfair Display';">Faltan</span>
 								<div class="simply-countdown simply-countdown-one"></div>
 							</div>
 						</div>
@@ -122,7 +141,7 @@
 						<h3 style="font-size: 2rem;">Entrada 4 via Cerritos, Urbanización Quimbayita</h3>
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.731930720991!2d-75.80378632501996!3d4.816025495159447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387c0f97657565%3A0x5b73bd37379fccd2!2sPETRA%20SANTA%20HOTEL%20BOUTIQUE!5e0!3m2!1ses!2sco!4v1747591277350!5m2!1ses!2sco"
-							width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+							width="auto" height="300" style="border:0;" allowfullscreen="" loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
@@ -151,32 +170,41 @@
 			</div>
 		</div> -->
 
-		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/nuestra-historia.jpg);">
-			<div class="overlay"></div>
+		<div id="fh5co-event" class="fh5co-bg" style="
+				background-image:url(images/nuestra-historia.jpg);
+				display: flex;
+				align-items: center;
+			">
 			<div class="container">
-				<div class="row">
-					<div class="display-t">
+				<div class="row" style="
+						display: flex;
+						justify-content: center;
+					">
+					<!-- 					<div class="display-t">
 						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1 d-flex justify-content-center">
-								<div class="col-md-7 col-sm-6">
-									<div class="event-wrap animate-box">
-										<div class="col-md-8 col-md-offset-2 fh5co-heading">
-											<p style="color: white; font-size: 2rem; font-family: 'Satisfy';">Hace dos
-												años, la vida nos
-												unió. Desde entonces,
-												hemos caminado de la mano, construyendo con amor nuestra historia. Hoy,
-												queremos seguir
-												este viaje, guiados por la fe y sellando ante Dios un pacto de amor, que
-												da inicio a
-												este nuevo capítulo como esposos.</p>
-										</div>
+							<div class="col-md-10 col-md-offset-1 d-flex justify-content-center"> -->
+					<div class="col-md-7 col-sm-6">
+						<div class="event-wrap animate-box">
+							<!-- <div class="col-md-8 col-md-offset-2 fh5co-heading"> -->
+							<p style="
+												color: white; 
+												font-size: 2rem; 
+												font-family: 'Satisfy';
+												text-align: center;">Hace dos
+								años, la vida nos
+								unió. Desde entonces,
+								hemos caminado de la mano, construyendo con amor nuestra historia. Hoy,
+								queremos seguir
+								este viaje, guiados por la fe y sellando ante Dios un pacto de amor, que
+								da inicio a
+								este nuevo capítulo como esposos.</p>
+							<!-- </div> -->
 
-									</div>
-								</div>
-
-							</div>
 						</div>
 					</div>
+					<!-- 							</div>
+						</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -255,7 +283,7 @@
 								<div class="timeline-panel">
 									<div class="timeline-heading">
 										<h3 class="timeline-title">Fin</h3>
-										<span class="date">02:00 PM</span>
+										<span class="date">02:00 AM</span>
 									</div>
 								</div>
 							</li>
@@ -265,33 +293,32 @@
 			</div>
 		</div>
 
-		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/vestimenta.jpg);">
-			<div class="overlay"></div>
+		<div id="fh5co-event" class="fh5co-bg"
+			style="background-image:url(images/vestimenta.jpg); display: flex; align-items: center;">
 			<div class="container">
-				<div class="row">
-					<div class="display-t">
-						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1 d-flex justify-content-center">
-								<div class="col-md-7 col-sm-6">
-									<div class="event-wrap animate-box">
-										<h3
-											style="text-align: center; font-weight: bold; font-family: 'Playfair Display';">
-											Código de vestimenta</h3>
-										<ul style="color: white; font-size: 2rem; font-family: 'Cormorant Garamond'">
-											<li>Vestimenta formal</li>
-											<li>Mujeres: Vestido largo</li>
-											<li>Hombres: Traje</li>
-											<li>Se recomienda evitar tonos claros, reservados para la novia</li>
-											<li>Por favor, evita los tonos verdes, están asignados a las damas de honor
-											</li>
-										</ul>
+				<div class="row" style="display: flex; justify-content: center;">
+					<!-- <div class="display-t">
+						<div class="display-tc"> -->
+					<!-- <div class="col-md-10 col-md-offset-1 d-flex justify-content-center"> -->
+					<div class="col-md-7 col-sm-6">
+						<div class="event-wrap animate-box">
+							<h3 style="text-align: center; font-weight: bold; font-family: 'Playfair Display';">
+								Código de vestimenta</h3>
+							<ul style="color: white; font-size: 2rem; font-family: 'Cormorant Garamond'">
+								<li>Vestimenta formal</li>
+								<li>Mujeres: Vestido largo</li>
+								<li>Hombres: Traje</li>
+								<li>Se recomienda evitar tonos claros, déjalos para la novia</li>
+								<li>Evita los tonos verdes, están asignados a las damas de honor
+								</li>
+							</ul>
 
-									</div>
-								</div>
-
-							</div>
 						</div>
 					</div>
+
+					<!-- </div> -->
+					<!-- 						</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -303,8 +330,8 @@
 						<h2 style="font-family: 'Playfair Display'; font-size: 3rem;">Tú eres el mejor regalo</h2>
 						<p style="text-align: center; font-family: 'Cormorant Garamond';">
 							Tu presencia en nuestro día especial es el regalo más valioso que podríamos recibir.
-							Sin embargo, si deseas expresarnos tu cariño con un detalle, hemos preparado un
-							cofre especial donde podrás dejar tu sobre. Lo más importante para nosotros es compartir
+							Sin embargo, si deseas expresarnos tu cariño con un detalle, hemos preparado una
+							caja especial donde podrás dejar tu sobre. Lo más importante para nosotros es compartir
 							este momento contigo.
 						</p>
 						<i class="bi bi-envelope-paper-heart" style="font-size: 5rem;"></i>
@@ -324,7 +351,7 @@
 						<p style="color: white;  ">
 							Si vas a acompañarnos, por favor confirma tu asistencia y completa tus datos.
 						</p>
-						<span style="color: white;">Fecha máxima para confirmar asistencia: 7 de julio</span>
+						<span style="color: white;">Fecha máxima para confirmar asistencia: 30 de junio</span>
 					</div>
 				</div>
 				<div class="row animate-box">
@@ -343,42 +370,58 @@
 							<div class="form-group">
 								<label for="restricciones" class="sr-only">Alergias o restricciones alimenticias</label>
 								<textarea class="form-control" name="restricciones" id="restricciones" rows="3"
-									placeholder="Alergias o restricciones alimenticias"></textarea>
+									placeholder="Alergias o restricciones alimenticias" draggable="false"></textarea>
 							</div>
 							<button type="submit" class="btn btn-default btn-block">Enviar</button>
+
+							<!-- <div id="loader" style="display: none; text-align: center; margin-top: 10px;">
+								<img src="images/loader.gif" alt="Cargando..." />
+							</div> -->
+
 						</form>
 					</div>
 				</div>
-
-				<script>
-					document.getElementById('registroForm').addEventListener('submit', function (e) {
-						e.preventDefault();
-
-						const form = e.target;
-						const formData = new FormData(form);
-
-						// URL del script de Google Apps Script (la tuya)
-						const scriptURL = "https://script.google.com/macros/s/AKfycbz2lOEIBtP1ywmRLknKokCrtU3SZy1P08yKrhbeGYJGWGpav9ASlovwWQt0B_3qNPTM/exec";
-
-						fetch(scriptURL, {
-							method: 'POST',
-							body: formData
-						})
-							.then(response => {
-								alert("¡Gracias por registrarte!");
-								form.reset();
-							})
-							.catch(error => {
-								alert("Ocurrió un error al enviar el formulario.");
-								console.error('Error:', error);
-							});
-					});
-				</script>
-
-
-
 			</div>
 		</div>
+
+		<div id="loader-overlay" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+">
+			<div class="spinner" style="
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border: 6px solid #6d7866;
+    border-top: 6px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  "></div>
+		</div>
+
+		<style>
+			#loader-overlay {
+				display: none;
+				display: flex;
+				/* Esto ahora se gestiona aquí y no en línea */
+				align-items: center;
+				justify-content: center;
+			}
+
+			@keyframes spin {
+				0% {
+					transform: rotate(0deg);
+				}
+
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
 
 		<footer id="fh5co-footer" role="contentinfo">
 			<div class="container">
@@ -386,9 +429,13 @@
 				<div class="row copyright">
 					<div class="col-md-12 text-center">
 						<p>
-							<small class="block"> Developed by <a href="http://unsplash.co/" target="_blank">Kevin
-									Mejía</a></small>
-							<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
+							<small class="block"> Developed by <a
+									href="http://www.linkedin.com/in/kevinmauriciomejiaalmansa" target="_blank" style="
+										background-color: #6d7866; 
+										color: white;
+										border-radius: 1rem;
+										padding: 0 6px;">Kevin Mejía</a></small>
+							<!-- <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> -->
 						</p>
 					</div>
 				</div>
@@ -396,6 +443,40 @@
 			</div>
 		</footer>
 	</div>
+
+	<div id="notification" class="hide"></div>
+
+	<style>
+		#notification {
+			position: fixed;
+			bottom: 30px;
+			left: 50%;
+			transform: translateX(-50%) translateY(20px);
+			background-color: #333;
+			color: #fff;
+			padding: 15px 25px;
+			border-radius: 8px;
+			font-size: 1.5rem;
+			z-index: 10000;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.4s ease, transform 0.4s ease;
+			width: max-content;
+		}
+
+		#notification.show {
+			opacity: 1;
+			transform: translateX(-50%) translateY(0);
+		}
+
+		#notification.hide {
+			opacity: 0;
+			transform: translateX(-50%) translateY(20px);
+		}
+	</style>
+
+
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -445,6 +526,86 @@
 		});
 	</script>
 
+	<script>
+		function mostrarNotificacion(mensaje, colorFondo = '#333') {
+			const notif = document.getElementById('notification');
+			notif.textContent = mensaje;
+			notif.style.backgroundColor = colorFondo;
+
+			// Mostrar notificación con clase show
+			notif.classList.remove('hide');
+			notif.classList.add('show');
+
+			// Ocultar después de 3 segundos
+			setTimeout(() => {
+				notif.classList.remove('show');
+				notif.classList.add('hide');
+			}, 4000);
+		}
+
+	</script>
+
+	<script>
+		document.getElementById('registroForm').addEventListener('submit', function (e) {
+			e.preventDefault();
+
+			const form = e.target;
+			const formData = new FormData(form);
+			const loaderOverlay = document.getElementById('loader-overlay');
+
+			// Mostrar el overlay
+			loaderOverlay.style.display = 'flex';
+
+			const scriptURL = "https://script.google.com/macros/s/AKfycbyHBc5LNUuqj2VsIqXtHKPA5K7TdfPyDf7lEonQhDqIo6EJYCE1ieor3wkRsLcVvMOw/exec";
+
+			fetch(scriptURL, {
+				method: 'POST',
+				body: formData
+			})
+				.then(response => response.text())
+				.then(result => {
+					if (result === "DUPLICADO") {
+						mostrarNotificacion("El invitado ya está registrado.", "#ffc107"); // amarillo
+					} else {
+						mostrarNotificacion("¡Gracias por registrarte!", "#28a745"); // verde
+						form.reset();
+					}
+				})
+				.catch(error => {
+					mostrarNotificacion("Ocurrió un error al enviar el formulario.", "#dc3545"); // rojo
+					console.error('Error:', error);
+				})
+				.finally(() => {
+					loaderOverlay.style.display = 'none';
+				});
+
+		});
+	</script>
+
+	<script>
+		const btn = document.getElementById("playMusicBtn");
+		const audio = document.getElementById("musica");
+		const waveform = document.getElementById("waveform");
+
+		const startTime = 20; // tiempo en segundos donde quieres empezar
+		const endTime = 156;   // tiempo en segundos donde quieres que se detenga
+
+		btn.addEventListener("click", () => {
+			audio.currentTime = startTime;
+			audio.play();
+
+			btn.style.display = "none";
+			waveform.style.display = "flex";
+		});
+
+		audio.addEventListener("timeupdate", () => {
+			if (audio.currentTime >= endTime) {
+				audio.pause();
+				waveform.style.display = "none";
+				btn.style.display = "inline-flex";
+			}
+		});
+	</script>
 
 </body>
 
