@@ -45,7 +45,7 @@
 }
 
 .btn-play {
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.15));
+    background-color: #33333344 !important;
     border: none;
     color: white;
     padding: 15px 30px;
@@ -60,6 +60,7 @@
     align-items: center;
     gap: 10px;
 }
+
 
 .btn-play:hover {
     /* box-shadow: 0 8px 20px rgba(238, 9, 121, 0.8); */
@@ -84,7 +85,8 @@
 .bar {
     width: 6px;
     height: 20px;
-    background: #fcf8e3;;
+    background: #fcf8e3;
+    ;
     border-radius: 3px;
     animation: bounce 1.2s infinite ease-in-out;
 }
